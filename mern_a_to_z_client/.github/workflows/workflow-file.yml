@@ -1,12 +1,9 @@
 name: Deploy to Vercel
 
-
 on:
   push:
     branches:
       - main
-
-on:
   workflow_dispatch:
 
 jobs:
@@ -22,3 +19,4 @@ jobs:
 
     - name: Deploy to Vercel
       run: vercel --token ${{ secrets.WNjeWJWj6gqvkGcVRdiBQZjd }} --prod
+
